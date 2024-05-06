@@ -1,0 +1,1 @@
+export { SellingPoint } from "./SellingPoint";
