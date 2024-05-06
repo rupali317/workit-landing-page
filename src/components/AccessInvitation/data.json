@@ -1,0 +1,17 @@
+[
+  {
+    "id": "Facebook",
+    "image": "/assets/images/icon-facebook.svg",
+    "link": "https://www.facebook.com/"
+  },
+  {
+    "id": "Twitter",
+    "image": "/assets/images/icon-twitter.svg",
+    "link": "https://twitter.com/?lang=en"
+  },
+  {
+    "id": "Instagram",
+    "image": "/assets/images/icon-instagram.svg",
+    "link": "https://www.instagram.com/"
+  }
+]
