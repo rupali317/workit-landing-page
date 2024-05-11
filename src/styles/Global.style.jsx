@@ -3,11 +3,11 @@ import { createGlobalStyle } from "styled-components";
 export const BaseStyles = createGlobalStyle`
     :root {
         /* Colors */
-        --color-primary-1: hsl(273, 85%, 13%);
-        --color-primary-2: hsl(276, 100%, 99%);
-        --color-secondary-1: hsl(150, 100%, 63%);
-        --color-neutral-1: hsl(271, 12%, 34%);
-        --color-neutral-2: hsl(0, 0%, 100%);
+        --color-primary-1: hsl(273, 85%, 13%); /* #24053E */
+        --color-primary-2: hsl(276, 100%, 99%); /* #FCF8FF */
+        --color-secondary-1: hsl(150, 100%, 63%); /* #44FFA1 */
+        --color-neutral-1: hsl(271, 12%, 34%); /* 584D62 */
+        --color-neutral-2: hsl(0, 0%, 100%); /* #FFFFFF */
 
         /* Font sizes */
         --font-size-xs-1: 1rem; /* 16px */
@@ -203,6 +203,10 @@ export const DefaultStyles = createGlobalStyle`
         font-size: var(--font-size-xs-1);
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-xs-1);
+        text-align: center;
+        padding: var(--space-base-1) var(--space-xs-6) var(--space-m-2) var(--space-xs-5);
+        max-width: 23.4375rem; /* 375px */
+        margin: auto;
     }
 
     h1,
@@ -217,5 +221,28 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-bold);
         line-height: var(--line-height-xs-2);
         letter-spacing: var(--letter-negative-spacing-1);
+    }
+
+    .primary-button {
+        &:hover {
+
+        }
+    }
+
+    .secondary-button {
+        text-decoration: underline;
+        color: var(--color-neutral-2);
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            color: var(--color-secondary-1);
+            cursor: pointer;
+        }
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
     }
 `;
