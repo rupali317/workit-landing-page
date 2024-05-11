@@ -1,4 +1,6 @@
 import data from "./data.json";
+import * as AccessInvitationStyles from "../../styles/AccessInvitation.style";
+import React from "react";
 
 export const AccessInvitation = () => {
   const SocialMediaList = data.map((item) => {
@@ -31,9 +33,13 @@ export const AccessInvitation = () => {
           src="/assets/images/logo-dark.svg"
           alt="Workit logo"
           title="Workit logo"
+          width="95.76"
+          height="24.61"
         />
       </a>
-      <section>{SocialMediaList}</section>
+      <AccessInvitationStyles.SocialMediaSection>
+        {SocialMediaList}
+      </AccessInvitationStyles.SocialMediaSection>
     </section>
   );
 };

@@ -197,4 +197,25 @@ export const ResetStyles = createGlobalStyle`
     }
 `;
 
-export const DefaultStyles = createGlobalStyle``;
+export const DefaultStyles = createGlobalStyle`
+    body {
+        font-family: "Manrope";
+        font-size: var(--font-size-xs-1);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-xs-1);
+    }
+
+    h1,
+    h2 {
+        font-family: "Fraunces";
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    button {
+        font-family: "Manrope";
+        font-size: var(--font-size-xs-1);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-xs-2);
+        letter-spacing: var(--letter-negative-spacing-1);
+    }
+`;
