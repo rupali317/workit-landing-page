@@ -130,6 +130,14 @@ export const ResetStyles = createGlobalStyle`
 
     * {
         margin: 0;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-block-end: 0;
+        padding-block-start: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
     }
 
     /* Prevent font size inflation */
@@ -204,7 +212,7 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-xs-1);
         text-align: center;
-        padding: var(--space-base-1) var(--space-xs-6) var(--space-m-2) var(--space-xs-5);
+        /* padding: var(--space-base-1) var(--space-xs-6) var(--space-m-2) var(--space-xs-5); */
         max-width: 23.4375rem; /* 375px */
         margin: auto;
     }
@@ -253,5 +261,12 @@ export const DefaultStyles = createGlobalStyle`
     img {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    section#selling-point-section {
+        background-color: var(--color-primary-2);
+        padding-top: var(--space-l-4);
+        padding-bottom: var(--space-m-3);
+        padding: var(--space-l-4) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
     }
 `;

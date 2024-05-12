@@ -28,7 +28,7 @@ export const InvitationCard = styled.section`
     margin-top: var(--space-xs-2);
     margin-left: auto;
     margin-right: auto;
-    max-width: 10.75rem; /* 172px */
+    min-width: 10.75rem; /* 172px */
   }
 
   h2 {
@@ -41,4 +41,9 @@ export const FounderImage = styled.img`
   position: relative;
   transform: translateY(52px);
   z-index: -1;
+`;
+
+export const AccessInvitationSection = styled.section`
+  padding: var(--space-m-7) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
+  /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 `;

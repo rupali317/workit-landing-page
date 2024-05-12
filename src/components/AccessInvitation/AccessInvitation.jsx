@@ -17,7 +17,7 @@ export const AccessInvitation = () => {
   });
 
   return (
-    <section>
+    <AccessInvitationStyles.AccessInvitationSection>
       <AccessInvitationStyles.FounderImage
         src="/assets/images/image-founder.webp"
         alt="Workit's founder"
@@ -47,6 +47,6 @@ export const AccessInvitation = () => {
       <AccessInvitationStyles.SocialMediaSection>
         {SocialMediaList}
       </AccessInvitationStyles.SocialMediaSection>
-    </section>
+    </AccessInvitationStyles.AccessInvitationSection>
   );
 };
