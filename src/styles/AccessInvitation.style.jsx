@@ -25,11 +25,20 @@ export const InvitationCard = styled.section`
   margin-bottom: var(--space-m-4);
 
   button {
-      margin-top: var(--space-xs-2);
+    margin-top: var(--space-xs-2);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10.75rem; /* 172px */
   }
 
   h2 {
-      font-size: var(--font-size-base);
-      line-height: var(--line-height-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
   }
+`;
+
+export const FounderImage = styled.img`
+  position: relative;
+  transform: translateY(52px);
+  z-index: -1;
 `;

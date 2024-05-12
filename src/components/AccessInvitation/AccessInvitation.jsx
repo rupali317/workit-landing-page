@@ -5,7 +5,12 @@ import React from "react";
 export const AccessInvitation = () => {
   const SocialMediaList = data.map((item) => {
     return (
-      <AccessInvitationStyles.SocialMediaLink key={item.id} href={item.link} target="_blank" rel="noreferrer">
+      <AccessInvitationStyles.SocialMediaLink
+        key={item.id}
+        href={item.link}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={item.image} alt={item.id} title={item.id} />
       </AccessInvitationStyles.SocialMediaLink>
     );
@@ -13,7 +18,7 @@ export const AccessInvitation = () => {
 
   return (
     <section>
-      <img
+      <AccessInvitationStyles.FounderImage
         src="/assets/images/image-founder.webp"
         alt="Workit's founder"
         title="Workit's founder"
@@ -28,7 +33,7 @@ export const AccessInvitation = () => {
           company. Apply for access below and I’ll be in touch to schedule a
           call.
         </p>
-        <button class="secondary-button">Apply for access</button>
+        <button className="primary-button">Apply for access</button>
       </AccessInvitationStyles.InvitationCard>
       <a href="#introduction-section">
         <img

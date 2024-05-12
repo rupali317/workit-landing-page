@@ -224,16 +224,25 @@ export const DefaultStyles = createGlobalStyle`
     }
 
     .primary-button {
-        &:hover {
+        color: var(--color-primary-1);
+        background-color: var(--color-secondary-1);
+        border: var(--border-width-m) solid var(--color-secondary-1);
+        padding: var(--space-xs-3) var(--space-s-2) var(--space-xs-4);
 
+
+        &:hover {
+            color: var(--color-secondary-1);
+            background-color: transparent;
+            cursor: pointer;
         }
     }
 
     .secondary-button {
-        text-decoration: underline;
         color: var(--color-neutral-2);
         background-color: transparent;
         border: none;
+        border-bottom: var(--border-width-l) solid var(--color-secondary-1);
+        padding: var(--space-none);
 
         &:hover {
             color: var(--color-secondary-1);
