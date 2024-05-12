@@ -38,12 +38,14 @@ export const InvitationCard = styled.section`
 `;
 
 export const FounderImage = styled.img`
-  position: relative;
-  transform: translateY(52px);
+  position: absolute;
+  transform: translate(1.9375rem, -14.1875rem); /* 31px, -227px */
   z-index: -1;
 `;
 
 export const AccessInvitationSection = styled.section`
-  padding: var(--space-m-7) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
+  position: relative;
+  padding: var(--space-xl-7) var(--space-xs-6) var(--space-m-2)
+    var(--space-xs-5);
   /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 `;

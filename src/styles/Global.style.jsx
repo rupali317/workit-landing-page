@@ -84,6 +84,7 @@ export const BaseStyles = createGlobalStyle`
         --space-xl-4: 12.735rem; /* 203.76px */
         --space-xl-5: 15.9375rem; /* 255px */
         --space-xl-6: 20.375rem; /* 326px */
+        --space-xl-7: 20.518125rem; /* 328.29px */
 
         /* Border width */
         --border-width-s: 0.0625rem; /* 1px */
@@ -223,6 +224,7 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-semi-bold);
     }
 
+    a, 
     button {
         font-family: "Manrope";
         font-size: var(--font-size-xs-1);
@@ -263,10 +265,14 @@ export const DefaultStyles = createGlobalStyle`
         margin-right: auto;
     }
 
-    section#selling-point-section {
+    #selling-point-section {
         background-color: var(--color-primary-2);
-        padding-top: var(--space-l-4);
-        padding-bottom: var(--space-m-3);
         padding: var(--space-l-4) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
+    }
+
+    #introduction-section {
+        background-color: var(--color-primary-1);
+        padding: var(--space-base-1) var(--space-xs-6) var(--space-l-5) var(--space-xs-5);
+        position: relative;
     }
 `;
