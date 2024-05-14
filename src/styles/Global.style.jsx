@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
     :root {
@@ -274,5 +275,12 @@ export const DefaultStyles = createGlobalStyle`
         background-color: var(--color-primary-1);
         padding: var(--space-base-1) var(--space-xs-6) var(--space-l-5) var(--space-xs-5);
         position: relative;
+    }
+
+    @media (min-width: ${TABLET_WIDTH}) {
+        body {
+            text-align: left;
+            max-width: 48rem;/* 768px */
+        }
     }
 `;

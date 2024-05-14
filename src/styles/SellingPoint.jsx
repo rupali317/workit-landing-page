@@ -12,7 +12,7 @@ export const List = styled.li`
   flex-direction: column;
   gap: var(--space-xs-5);
 
-  h2 {
+  h3 {
     color: var(--color-primary-1);
     font-size: var(--font-size-s-3);
     line-height: var(--line-height-s-1);

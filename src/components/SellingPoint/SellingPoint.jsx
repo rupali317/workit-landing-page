@@ -7,7 +7,7 @@ export const SellingPoint = () => {
     return (
       <SellingPointStyles.List key={item.id}>
         <div aria-label={`Number ${item.id}`}>{item.id}</div>
-        <h2>{item.title}</h2>
+        <h3>{item.title}</h3>
         <p>{item.description}</p>
       </SellingPointStyles.List>
     );
