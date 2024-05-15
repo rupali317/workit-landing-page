@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { TABLET_WIDTH } from "../constants/Breakpoints";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const OrderedList = styled.ol`
   display: flex;
@@ -12,6 +12,12 @@ export const OrderedList = styled.ol`
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    flex-direction: row;
+    max-width: 69.625rem; //1114px
+    gap: var(--space-s-4);
+  }
 `;
 
 export const SellingPointSection = styled.section`
@@ -21,6 +27,11 @@ export const SellingPointSection = styled.section`
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-xl-4) var(--space-base-4) var(--space-l-1)
       var(--space-base-3);
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    padding: var(--space-xl-6) var(--space-l-7) var(--space-xl-2)
+      var(--space-xl-1);
   }
 `;
 
@@ -70,6 +81,35 @@ export const List = styled.li`
 
     div {
       text-align: center;
+    }
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    grid-template-areas:
+      "number"
+      "title"
+      "description";
+    min-width: 22.125rem; // 354px
+    gap: var(--space-s-5);
+
+    h3 {
+      margin-top: var(--space-s-5);
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-s-2);
+    }
+
+    p {
+      font-size: var(--font-size-xs-2);
+      line-height: var(--line-height-xs-2);
+    }
+
+    div {
+      width: 3.5rem; // 56px
+      height: 3.5rem; // 56px
+      font-size: var(--font-size-s-2);
+      line-height: var(--line-height-s-2);
+      padding: var(--space-xs-2) var(--space-xs-7) var(--space-xs-2)
+        var(--space-xs-8);
     }
   }
 `;
