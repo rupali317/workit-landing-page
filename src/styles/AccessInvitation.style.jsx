@@ -41,6 +41,8 @@ export const InvitationCard = styled.section`
     gap: var(--space-s-3);
     max-width: 32.125rem; // 514px
     margin-left: auto;
+    margin-right: auto;
+    transform: translateX(47px);
     margin-bottom: var(--space-m-5);
     position: relative;
 
@@ -74,8 +76,7 @@ export const FounderImage = styled.img`
   z-index: -1;
 
   @media (min-width: ${TABLET_WIDTH}) {
-    transform: translate(0rem, -50%);
-    left: initial;
+    transform: translate(-135%, -50%);
   }
 `;
 

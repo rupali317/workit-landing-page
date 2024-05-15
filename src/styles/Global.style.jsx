@@ -267,11 +267,6 @@ export const DefaultStyles = createGlobalStyle`
         margin-right: auto;
     }
 
-    #selling-point-section {
-        background-color: var(--color-primary-2);
-        padding: var(--space-l-4) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
-    }
-
     @media (min-width: ${TABLET_WIDTH}) {
         body {
             text-align: left;

@@ -14,11 +14,11 @@ export const SellingPoint = () => {
   });
 
   return (
-    <section id="selling-point-section">
+    <SellingPointStyles.SellingPointSection id="selling-point-section">
       <SellingPointStyles.OrderedList>
         {sellingPoints}
       </SellingPointStyles.OrderedList>
       {/* <CurvedPathEffect /> */}
-    </section>
+    </SellingPointStyles.SellingPointSection>
   );
 };
