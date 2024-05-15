@@ -272,15 +272,10 @@ export const DefaultStyles = createGlobalStyle`
         padding: var(--space-l-4) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
     }
 
-    #introduction-section {
-        background-color: var(--color-primary-1);
-        padding: var(--space-base-1) var(--space-xs-6) var(--space-l-5) var(--space-xs-5);
-    }
-
     @media (min-width: ${TABLET_WIDTH}) {
         body {
             text-align: left;
-            max-width: 48rem; // 768px 
+            min-width: 48rem; // 768px 
         }
     }
 `;

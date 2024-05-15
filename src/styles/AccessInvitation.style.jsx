@@ -42,6 +42,7 @@ export const InvitationCard = styled.section`
     max-width: 32.125rem; // 514px
     margin-left: auto;
     margin-bottom: var(--space-m-5);
+    position: relative;
 
     button {
       margin-top: var(--space-none);

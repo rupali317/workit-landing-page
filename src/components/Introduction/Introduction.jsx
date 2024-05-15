@@ -3,7 +3,7 @@ import * as IntroductionStyles from "../../styles/Introduction.style";
 
 export const Introduction = () => {
   return (
-    <section id="introduction-section">
+    <IntroductionStyles.IntroductionSection id="introduction-section">
       <IntroductionStyles.Header>
         <a href="#introduction-section">
           <img
@@ -16,6 +16,11 @@ export const Introduction = () => {
         </a>
         <button className="secondary-button">Apply for access</button>
       </IntroductionStyles.Header>
+      <IntroductionStyles.SpiralDecorationLeft
+        src="/assets/images/bg-pattern-1.svg"
+        alt=""
+        role="presentation"
+      />
       <IntroductionStyles.MainHeading>
         Data <u>tailored</u> to your needs.
       </IntroductionStyles.MainHeading>
@@ -32,8 +37,13 @@ export const Introduction = () => {
         width="317.91"
         height="176.91"
       />
+      <IntroductionStyles.SpiralDecorationRight
+        src="/assets/images/bg-pattern-2.svg"
+        alt=""
+        role="presentation"
+      />
       {/* <CurvedPathEffect /> */}
-    </section>
+    </IntroductionStyles.IntroductionSection>
   );
 };
 
