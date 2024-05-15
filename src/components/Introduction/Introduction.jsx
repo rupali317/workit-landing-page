@@ -1,5 +1,5 @@
 import * as IntroductionStyles from "../../styles/Introduction.style";
-import { CurvedPathEffect } from "../CurvedPathEffect/CurvedPathEffect";
+// import { CurvedPathEffect } from "../CurvedPathEffect/CurvedPathEffect";
 
 export const Introduction = () => {
   return (
@@ -32,7 +32,7 @@ export const Introduction = () => {
         width="317.91"
         height="176.91"
       />
-      <CurvedPathEffect />
+      {/* <CurvedPathEffect /> */}
     </section>
   );
 };

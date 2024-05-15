@@ -27,5 +27,6 @@ export const Link = styled.a`
 
 export const HeroImage = styled.img`
   position: absolute;
-  transform: translate(1.25rem, 4.2rem); /* 20px, 67.2px */
+  transform: translate(-50%, 36%);
+  left: 50%;
 `;

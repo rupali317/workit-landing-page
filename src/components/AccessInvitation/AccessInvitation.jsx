@@ -34,6 +34,11 @@ export const AccessInvitation = () => {
           call.
         </p>
         <button className="primary-button">Apply for access</button>
+        <AccessInvitationStyles.SpiralDecoration
+          src="/assets/images/bg-pattern-3.svg"
+          alt=""
+          role="presentation"
+        />
       </AccessInvitationStyles.InvitationCard>
       <a href="#introduction-section">
         <img

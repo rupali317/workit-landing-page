@@ -83,9 +83,10 @@ export const BaseStyles = createGlobalStyle`
         --space-xl-2: 10.6875rem; /* 171px */
         --space-xl-3: 12.7025rem; /* 203.24px */
         --space-xl-4: 12.735rem; /* 203.76px */
-        --space-xl-5: 15.9375rem; /* 255px */
-        --space-xl-6: 20.375rem; /* 326px */
-        --space-xl-7: 20.518125rem; /* 328.29px */
+        --space-xl-5: 15.704375rem; /* 251.27px */
+        --space-xl-6: 15.9375rem; /* 255px */
+        --space-xl-7: 20.375rem; /* 326px */
+        --space-xl-8: 20.518125rem; /* 328.29px */
 
         /* Border width */
         --border-width-s: 0.0625rem; /* 1px */
@@ -215,7 +216,7 @@ export const DefaultStyles = createGlobalStyle`
         line-height: var(--line-height-xs-1);
         text-align: center;
         /* padding: var(--space-base-1) var(--space-xs-6) var(--space-m-2) var(--space-xs-5); */
-        max-width: 23.4375rem; /* 375px */
+        min-width: 23.4375rem; /* 375px */
         margin: auto;
     }
 
@@ -274,13 +275,12 @@ export const DefaultStyles = createGlobalStyle`
     #introduction-section {
         background-color: var(--color-primary-1);
         padding: var(--space-base-1) var(--space-xs-6) var(--space-l-5) var(--space-xs-5);
-        position: relative;
     }
 
     @media (min-width: ${TABLET_WIDTH}) {
         body {
             text-align: left;
-            max-width: 48rem;/* 768px */
+            max-width: 48rem; // 768px 
         }
     }
 `;

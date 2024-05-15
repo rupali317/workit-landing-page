@@ -39,7 +39,9 @@ export const InvitationCard = styled.section`
 
   @media (min-width: ${TABLET_WIDTH}) {
     gap: var(--space-s-3);
-    max-width: 32.125rem; /* 514px */
+    max-width: 32.125rem; // 514px
+    margin-left: auto;
+    margin-bottom: var(--space-m-5);
 
     button {
       margin-top: var(--space-none);
@@ -53,24 +55,37 @@ export const InvitationCard = styled.section`
   }
 `;
 
+export const SpiralDecoration = styled.img`
+  display: none;
+
+  @media (min-width: ${TABLET_WIDTH}) {
+    position: absolute;
+    bottom: 0;
+    transform: translate(100%, 50%);
+    display: block;
+  }
+`;
+
 export const FounderImage = styled.img`
   position: absolute;
-  transform: translate(1.9375rem, -14.1875rem); /* 31px, -227px */
+  transform: translate(-50%, -82%);
+  left: 50%;
   z-index: -1;
 
   @media (min-width: ${TABLET_WIDTH}) {
-    transform: translate(0rem, 0rem);
+    transform: translate(0rem, -50%);
+    left: initial;
   }
 `;
 
 export const AccessInvitationSection = styled.section`
   position: relative;
-  padding: var(--space-xl-7) var(--space-xs-6) var(--space-m-2)
+  padding: var(--space-xl-8) var(--space-xs-6) var(--space-m-2)
     var(--space-xs-5);
   /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    padding: var(--space-m-6) var(--space-base-4) var(--space-m-5)
+    padding: var(--space-xl-5) var(--space-base-4) var(--space-m-5)
       var(--space-base-3);
   }
 `;
