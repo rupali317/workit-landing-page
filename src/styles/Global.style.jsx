@@ -54,12 +54,14 @@ export const BaseStyles = createGlobalStyle`
         --space-xs-6: 1.01875rem; /* 16.3px */
         --space-xs-7: 1.0625rem;/* 17px */
         --space-xs-8: 1.125rem;/* 18px */
+        --space-xs-9: 0.8125rem; /* 13px */
         --space-s-1: 1.4375rem; /* 23px */
         --space-s-2: 1.46875rem; /* 23.5px */
         --space-s-3: 1.5rem; /* 24px */
         --space-s-4: 1.625rem; /* 26px */
         --space-s-5: 1.75rem; /* 28px */
         --space-s-6: 1.9375rem; /* 31px */
+        --space-s-7: 1.96875rem; /* 31.5px */
         --space-base-1: 2rem; /* 32px */
         --space-base-2: 2.3125rem; /* 37px */
         --space-base-3: 2.4375rem; /* 39px */
@@ -67,6 +69,7 @@ export const BaseStyles = createGlobalStyle`
         --space-base-5: 3rem; /* 48px */
         --space-base-6: 3.4375rem; /* 55px */
         --space-base-7: 3.5rem; /* 56px */
+        --space-base-8: 2.03125rem; /* 32.5px */
         --space-m-1: 3.625rem; /* 58px */
         --space-m-2: 4rem; /* 64px */
         --space-m-3: 4.481875rem; /* 71.71px */
@@ -280,6 +283,12 @@ export const DefaultStyles = createGlobalStyle`
         body {
             text-align: center;
             min-width: 80rem; // 1280px
+        }
+
+        a,
+        button {
+            font-size: var(--font-size-xs-2);
+            letter-spacing: var(--letter-negative-spacing-2);
         }
     }
 `;
