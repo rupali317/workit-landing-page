@@ -15,6 +15,7 @@ export const SellingPoint = () => {
 
   return (
     <SellingPointStyles.SellingPointSection id="selling-point-section">
+      <h2 class="visually-hidden">Benefits of workit</h2>
       <SellingPointStyles.OrderedList>
         {sellingPoints}
       </SellingPointStyles.OrderedList>
