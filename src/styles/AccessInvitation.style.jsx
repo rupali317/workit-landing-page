@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { TABLET_WIDTH } from "../constants/Breakpoints";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const SocialMediaSection = styled.section`
   display: flex;
@@ -42,9 +42,11 @@ export const InvitationCard = styled.section`
     max-width: 32.125rem; // 514px
     margin-left: auto;
     margin-right: auto;
-    transform: translateX(47px);
+    transform: translateX(2.9375rem); // 47px
     margin-bottom: var(--space-m-5);
     position: relative;
+    padding: var(--space-base-5) var(--space-base-7) var(--space-base-7)
+      var(--space-base-7);
 
     button {
       margin-top: var(--space-none);
@@ -54,6 +56,22 @@ export const InvitationCard = styled.section`
     h2 {
       font-size: var(--font-size-m-1);
       line-height: var(--line-height-m-2);
+      transform: translateX(0.03125rem);
+    }
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    max-width: 45.625rem; // 730px
+    text-align: left;
+    padding: var(--space-m-2);
+    gap: var(--space-base-1);
+    margin-bottom: var(--space-l-3);
+    transform: translateX(6.5rem); // 104px
+
+    h2 {
+      font-size: var(--font-size-l-1);
+      line-height: var(--line-height-l-2);
+      transform: translateX(0.0625rem);
     }
   }
 `;
@@ -67,6 +85,10 @@ export const SpiralDecoration = styled.img`
     transform: translate(100%, 50%);
     display: block;
   }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    transform: translate(170%, 31%);
+  }
 `;
 
 export const FounderImage = styled.img`
@@ -77,6 +99,12 @@ export const FounderImage = styled.img`
 
   @media (min-width: ${TABLET_WIDTH}) {
     transform: translate(-135%, -50%);
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    width: 29.8125rem; // 477px
+    height: 29.8125rem; // 477px
+    transform: translate(-135%, -36%);
   }
 `;
 
@@ -89,5 +117,10 @@ export const AccessInvitationSection = styled.section`
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-xl-5) var(--space-base-4) var(--space-m-5)
       var(--space-base-3);
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    padding: var(--space-xl-9) var(--space-l-7) var(--space-l-2)
+      var(--space-xl-1);
   }
 `;

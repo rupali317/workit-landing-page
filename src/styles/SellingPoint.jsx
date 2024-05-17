@@ -98,11 +98,6 @@ export const List = styled.li`
       line-height: var(--line-height-s-2);
     }
 
-    p {
-      font-size: var(--font-size-xs-2);
-      line-height: var(--line-height-xs-2);
-    }
-
     div {
       width: 3.5rem; // 56px
       height: 3.5rem; // 56px

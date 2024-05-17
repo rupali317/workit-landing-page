@@ -92,6 +92,7 @@ export const BaseStyles = createGlobalStyle`
         --space-xl-6: 15.9375rem; /* 255px */
         --space-xl-7: 20.375rem; /* 326px */
         --space-xl-8: 20.518125rem; /* 328.29px */
+        --space-xl-9: 17.6875rem;/* 283px */
 
         /* Border width */
         --border-width-s: 0.0625rem; /* 1px */
@@ -283,6 +284,8 @@ export const DefaultStyles = createGlobalStyle`
         body {
             text-align: center;
             min-width: 80rem; // 1280px
+            font-size: var(--font-size-xs-2);
+            line-height: var(--line-height-xs-2);
         }
 
         a,
