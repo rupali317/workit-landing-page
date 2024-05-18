@@ -30,9 +30,32 @@ export const SpiralDecorationLeft = styled.img`
   @media (min-width: ${TABLET_WIDTH}) {
     display: block;
     position: absolute;
-    transform: translate(-79%, 10px);
+    transform: translate(-87%, 0.625rem);
+    width: 21.3125rem; // 341px
+    height: 19.8125rem; // 317px
   }
 `;
+
+// /* RRC: Use background image with background position properties (probably easiest and would definitely not cause overflow!)
+// export const SpiralDecorationRight = styled.div`
+//   display: none;
+
+//   @media (min-width: ${TABLET_WIDTH}) {
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     background-image: url("/assets/images/bg-pattern-2.svg");
+//     background-position: 0 0;
+//     background-repeat: no-repeat;
+//     width: 10.875rem; // 174px
+//     height: 11.3125rem; // 181px
+//   }
+
+//   @media (min-width: ${DESKTOP_WIDTH}) {
+//     background-position: 3rem 0;
+//     bottom: 14.9375rem;// 239px
+//   }
+// `;
 
 export const SpiralDecorationRight = styled.img`
   display: none;
@@ -42,6 +65,8 @@ export const SpiralDecorationRight = styled.img`
     position: absolute;
     right: 0;
     transform: translate(52%, -50%);
+    width: 10.875rem; // 174px
+    height: 11.3125rem; // 181px
   }
 `;
 
@@ -98,6 +123,8 @@ export const HeroImage = styled.img`
   transform: translate(-50%, 34%);
   left: 50%;
   z-index: 2;
+  width: 20rem; // 320px
+  height: 11.5rem; // 184px
 
   @media (min-width: ${TABLET_WIDTH}) {
     transform: translate(-50%, 17%);

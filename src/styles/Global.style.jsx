@@ -221,7 +221,7 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-xs-1);
         text-align: center;
-        /* padding: var(--space-base-1) var(--space-xs-6) var(--space-m-2) var(--space-xs-5); */
+        overflow-x: hidden; /* RRC: Need to remove this later */
         min-width: 23.4375rem; /* 375px */
         margin: auto;
     }
@@ -276,11 +276,17 @@ export const DefaultStyles = createGlobalStyle`
         bottom: 0;
         right: 0;
         z-index: 1;
+        transform: translateY(0.0625rem);
     }
 
     img {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .workit-logo {
+        width: 5.985rem; // 95.76px
+        height: 1.538125rem; // 24.61px
     }
 
     .visually-hidden:not(:focus):not(:active) { 

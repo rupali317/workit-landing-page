@@ -14,6 +14,11 @@ export const SocialMediaLink = styled.a`
     filter: brightness(0) saturate(100%) invert(3%) sepia(90%) saturate(4030%)
       hue-rotate(261deg) brightness(102%) contrast(102%);
   }
+
+  img {
+    width: 1.25rem; // 20px
+    height: 1.25rem; // 20px
+  }
 `;
 
 export const InvitationCard = styled.section`
@@ -82,12 +87,15 @@ export const SpiralDecoration = styled.img`
   @media (min-width: ${TABLET_WIDTH}) {
     position: absolute;
     bottom: 0;
-    transform: translate(100%, 50%);
+    right: 0;
+    transform: translate(-4%, 47%);
     display: block;
+    width: 13.8125rem; // 221px
+    height: 13.25rem; // 212px
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    transform: translate(170%, 31%);
+    transform: translate(-33%, 31%);
   }
 `;
 
@@ -96,6 +104,8 @@ export const FounderImage = styled.img`
   transform: translate(-50%, -82%);
   left: 50%;
   z-index: -1;
+  width: 17.5625rem; // 281px
+  height: 17.5625rem; // 281px
 
   @media (min-width: ${TABLET_WIDTH}) {
     transform: translate(-135%, -50%);

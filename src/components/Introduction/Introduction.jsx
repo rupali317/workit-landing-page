@@ -6,6 +6,7 @@ export const Introduction = () => {
       <IntroductionStyles.Header>
         <a href="#introduction-section">
           <img
+            className="workit-logo"
             src="/assets/images/logo-light.svg"
             alt="Workit logo"
             title="Workit logo"

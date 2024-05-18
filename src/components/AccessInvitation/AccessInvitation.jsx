@@ -42,6 +42,7 @@ export const AccessInvitation = () => {
       </AccessInvitationStyles.InvitationCard>
       <a href="#introduction-section">
         <img
+          className="workit-logo"
           src="/assets/images/logo-dark.svg"
           alt="Workit logo"
           title="Workit logo"
