@@ -23,6 +23,7 @@ export const OrderedList = styled.ol`
 export const SellingPointSection = styled.section`
   background-color: var(--color-primary-2);
   padding: var(--space-l-4) var(--space-xs-6) var(--space-m-3) var(--space-xs-5);
+  position: relative;
 
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-xl-4) var(--space-base-4) var(--space-l-1)
@@ -107,4 +108,8 @@ export const List = styled.li`
         var(--space-xs-8);
     }
   }
+`;
+
+export const CurvedEffect = styled.div`
+  background-color: var(--color-neutral-2);
 `;

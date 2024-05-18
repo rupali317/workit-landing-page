@@ -11,6 +11,7 @@ export const IntroductionSection = styled.section`
   padding: var(--space-base-1) var(--space-xs-6) var(--space-l-5)
     var(--space-xs-5);
   text-align: center;
+  position: relative;
 
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-base-1) var(--space-base-4) var(--space-xl-3)
@@ -96,6 +97,7 @@ export const HeroImage = styled.img`
   position: absolute;
   transform: translate(-50%, 36%);
   left: 50%;
+  z-index: 2;
 
   @media (min-width: ${TABLET_WIDTH}) {
     transform: translate(-50%, 17%);
@@ -108,4 +110,8 @@ export const HeroImage = styled.img`
     width: 47.9375rem; // 767px
     height: 27.5625rem; // 441px
   }
+`;
+
+export const CurvedEffect = styled.div`
+  background-color: var(--color-primary-2);
 `;

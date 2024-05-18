@@ -268,6 +268,16 @@ export const DefaultStyles = createGlobalStyle`
         }
     }
 
+    .curved-effect {
+        width: 100%;
+        height: 30%;
+        clip-path: url("#clipped-path");
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
     img {
         margin-left: auto;
         margin-right: auto;

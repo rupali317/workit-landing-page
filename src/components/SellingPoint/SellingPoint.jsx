@@ -1,6 +1,5 @@
 import data from "./data.json";
-import * as SellingPointStyles from "../../styles/SellingPoint";
-// import { CurvedPathEffect } from "../CurvedPathEffect/CurvedPathEffect";
+import * as SellingPointStyles from "../../styles/SellingPoint.style";
 
 export const SellingPoint = () => {
   const sellingPoints = data.map((item) => {
@@ -15,11 +14,11 @@ export const SellingPoint = () => {
 
   return (
     <SellingPointStyles.SellingPointSection id="selling-point-section">
-      <h2 class="visually-hidden">Benefits of workit</h2>
+      <h2 className="visually-hidden">Benefits of workit</h2>
       <SellingPointStyles.OrderedList>
         {sellingPoints}
       </SellingPointStyles.OrderedList>
-      {/* <CurvedPathEffect /> */}
+      <SellingPointStyles.CurvedEffect className="curved-effect"></SellingPointStyles.CurvedEffect>
     </SellingPointStyles.SellingPointSection>
   );
 };
