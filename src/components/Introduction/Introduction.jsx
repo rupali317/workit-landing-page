@@ -33,8 +33,8 @@ export const Introduction = () => {
         src="/assets/images/image-hero.webp"
         alt=""
         role="presentation"
-        width="317.91"
-        height="176.91"
+        width="320"
+        height="184"
       />
       <IntroductionStyles.SpiralDecorationRight
         src="/assets/images/bg-pattern-2.svg"

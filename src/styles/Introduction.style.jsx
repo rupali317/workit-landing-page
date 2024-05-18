@@ -95,7 +95,7 @@ export const Link = styled.a`
 
 export const HeroImage = styled.img`
   position: absolute;
-  transform: translate(-50%, 36%);
+  transform: translate(-50%, 34%);
   left: 50%;
   z-index: 2;
 
