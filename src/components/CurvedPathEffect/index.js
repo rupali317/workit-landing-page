@@ -1,0 +1,1 @@
+export { CurvedPathEffect } from "./CurvedPathEffect";
