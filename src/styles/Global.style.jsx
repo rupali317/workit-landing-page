@@ -270,7 +270,7 @@ export const DefaultStyles = createGlobalStyle`
 
     .curved-effect {
         width: 100%;
-        height: 30%;
+        height: 12%;
         clip-path: url("#clipped-path");
         position: absolute;
         bottom: 0;
@@ -298,6 +298,10 @@ export const DefaultStyles = createGlobalStyle`
             text-align: left;
             min-width: 48rem; // 768px
         }
+
+        .curved-effect {
+            height: 21%;
+        }
     }
 
     @media (min-width: ${DESKTOP_WIDTH}) {
@@ -312,6 +316,10 @@ export const DefaultStyles = createGlobalStyle`
         button {
             font-size: var(--font-size-xs-2);
             letter-spacing: var(--letter-negative-spacing-2);
+        }
+
+        .curved-effect {
+            height: 30%;
         }
     }
 `;
