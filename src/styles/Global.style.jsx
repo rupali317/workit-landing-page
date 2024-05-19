@@ -221,7 +221,6 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-xs-1);
         text-align: center;
-        min-width: 23.4375rem; /* 375px */
         margin: auto;
     }
 
@@ -301,7 +300,6 @@ export const DefaultStyles = createGlobalStyle`
     @media (min-width: ${TABLET_WIDTH}) {
         body {
             text-align: left;
-            min-width: 48rem; // 768px
         }
 
         .curved-effect {
@@ -312,7 +310,6 @@ export const DefaultStyles = createGlobalStyle`
     @media (min-width: ${DESKTOP_WIDTH}) {
         body {
             text-align: center;
-            min-width: 80rem; // 1280px
             font-size: var(--font-size-xs-2);
             line-height: var(--line-height-xs-2);
         }
