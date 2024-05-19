@@ -4,6 +4,7 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const IntroductionSection = styled.section`

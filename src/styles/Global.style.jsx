@@ -269,7 +269,7 @@ export const DefaultStyles = createGlobalStyle`
 
     .curved-effect {
         width: 100%;
-        height: 12%;
+        height: 3.875rem; // 62px
         clip-path: url("#clipped-path");
         position: absolute;
         bottom: 0;
@@ -304,7 +304,7 @@ export const DefaultStyles = createGlobalStyle`
         }
 
         .curved-effect {
-            height: 21%;
+            height: 7.5rem; // 120px
         }
     }
 
@@ -322,7 +322,7 @@ export const DefaultStyles = createGlobalStyle`
         }
 
         .curved-effect {
-            height: 30%;
+            height: 14.375rem; // 230px
         }
     }
 `;
