@@ -17,6 +17,7 @@ export const OrderedList = styled.ol`
     flex-direction: row;
     max-width: 69.625rem; //1114px
     gap: var(--space-s-4);
+    justify-content: center;
   }
 `;
 
