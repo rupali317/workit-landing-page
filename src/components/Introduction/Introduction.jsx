@@ -37,11 +37,7 @@ export const Introduction = () => {
         width="320"
         height="184"
       />
-      <IntroductionStyles.SpiralDecorationRight
-        src="/assets/images/bg-pattern-2.svg"
-        alt=""
-        role="presentation"
-      />
+      <IntroductionStyles.SpiralDecorationRight role="presentation" />
       <IntroductionStyles.CurvedEffect className="curved-effect"></IntroductionStyles.CurvedEffect>
     </IntroductionStyles.IntroductionSection>
   );

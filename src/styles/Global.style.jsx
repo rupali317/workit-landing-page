@@ -221,7 +221,6 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-xs-1);
         text-align: center;
-        overflow-x: hidden; /* RRC: Need to remove this later */
         min-width: 23.4375rem; /* 375px */
         margin: auto;
     }

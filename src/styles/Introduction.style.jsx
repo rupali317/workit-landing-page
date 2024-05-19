@@ -36,37 +36,25 @@ export const SpiralDecorationLeft = styled.img`
   }
 `;
 
-// /* RRC: Use background image with background position properties (probably easiest and would definitely not cause overflow!)
-// export const SpiralDecorationRight = styled.div`
-//   display: none;
-
-//   @media (min-width: ${TABLET_WIDTH}) {
-//     display: block;
-//     position: absolute;
-//     right: 0;
-//     background-image: url("/assets/images/bg-pattern-2.svg");
-//     background-position: 0 0;
-//     background-repeat: no-repeat;
-//     width: 10.875rem; // 174px
-//     height: 11.3125rem; // 181px
-//   }
-
-//   @media (min-width: ${DESKTOP_WIDTH}) {
-//     background-position: 3rem 0;
-//     bottom: 14.9375rem;// 239px
-//   }
-// `;
-
-export const SpiralDecorationRight = styled.img`
+export const SpiralDecorationRight = styled.div`
   display: none;
 
   @media (min-width: ${TABLET_WIDTH}) {
     display: block;
     position: absolute;
     right: 0;
-    transform: translate(52%, -50%);
+    background-image: url("/assets/images/bg-pattern-2.svg");
+    background-size: cover;
+    background-position: 6rem 0;
+    bottom: 10rem;
+    background-repeat: no-repeat;
     width: 10.875rem; // 174px
     height: 11.3125rem; // 181px
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    background-position: 3rem 0;
+    bottom: 14.9375rem; // 239px
   }
 `;
 
