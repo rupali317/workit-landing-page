@@ -320,6 +320,10 @@ export const DefaultStyles = createGlobalStyle`
             font-size: var(--font-size-xs-2);
             letter-spacing: var(--letter-negative-spacing-2);
         }
+        
+        .primary-button {
+            padding: var(--space-xs-9) var(--space-s-7) var(--space-xs-5) var(--space-base-8);
+        }
 
         .curved-effect {
             height: 14.375rem; // 230px

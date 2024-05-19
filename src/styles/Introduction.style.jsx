@@ -105,8 +105,6 @@ export const Link = styled.a`
 
   @media (min-width: ${DESKTOP_WIDTH}) {
     margin-top: var(--space-base-2);
-    padding: var(--space-xs-9) var(--space-s-7) var(--space-xs-5)
-      var(--space-base-8);
     min-width: 10.0625rem; // 161px
   }
 `;
