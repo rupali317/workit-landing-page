@@ -30,9 +30,13 @@ export const SpiralDecorationLeft = styled.img`
   @media (min-width: ${TABLET_WIDTH}) {
     display: block;
     position: absolute;
-    transform: translate(-87%, 0.625rem);
+    transform: translate(-79%, 0.625rem);
     width: 21.3125rem; // 341px
     height: 19.8125rem; // 317px
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    transform: translate(-89%, 2rem);
   }
 `;
 
@@ -46,7 +50,7 @@ export const SpiralDecorationRight = styled.div`
     background-image: url("/assets/images/bg-pattern-2.svg");
     background-size: cover;
     background-position: 6rem 0;
-    bottom: 10rem;
+    bottom: 8rem; // 128px
     background-repeat: no-repeat;
     width: 10.875rem; // 174px
     height: 11.3125rem; // 181px

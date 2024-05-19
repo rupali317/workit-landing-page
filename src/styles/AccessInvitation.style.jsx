@@ -95,7 +95,7 @@ export const SpiralDecoration = styled.img`
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    transform: translate(-33%, 31%);
+    transform: translate(-33%, 29%);
   }
 `;
 
@@ -125,7 +125,7 @@ export const AccessInvitationSection = styled.section`
   /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    padding: var(--space-xl-5) var(--space-base-4) var(--space-m-5)
+    padding: var(--space-xl-5) var(--space-base-4) var(--space-l-3)
       var(--space-base-3);
   }
 

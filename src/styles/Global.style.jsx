@@ -225,7 +225,8 @@ export const DefaultStyles = createGlobalStyle`
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
         font-family: "Fraunces";
         font-weight: var(--font-weight-semi-bold);
     }

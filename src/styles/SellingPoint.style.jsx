@@ -11,6 +11,7 @@ export const OrderedList = styled.ol`
     max-width: 35.8125rem; //573px
     margin-left: auto;
     margin-right: auto;
+    gap: var(--space-base-5);
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
@@ -81,6 +82,10 @@ export const List = styled.li`
     grid-column-gap: var(--space-base-1);
     grid-row-gap: var(--space-xs-5);
 
+    h3 {
+      margin-top: var(--space-none);
+    }
+
     div {
       text-align: center;
     }
@@ -105,8 +110,7 @@ export const List = styled.li`
       height: 3.5rem; // 56px
       font-size: var(--font-size-s-2);
       line-height: var(--line-height-s-2);
-      padding: var(--space-xs-2) var(--space-xs-7) var(--space-xs-2)
-        var(--space-xs-8);
+      padding: var(--space-xs-2);
     }
   }
 `;
