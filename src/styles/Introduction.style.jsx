@@ -73,9 +73,10 @@ export const MainHeading = styled.h1`
   margin-left: auto;
   margin-right: auto;
 
-  u {
-    text-decoration: none;
+  em {
+    text-decoration: none; // Not doing underline as it appeared too close to the text
     border-bottom: var(--border-width-l) solid var(--color-secondary-1);
+    font-style: normal;
   }
 
   @media (min-width: ${TABLET_WIDTH}) {

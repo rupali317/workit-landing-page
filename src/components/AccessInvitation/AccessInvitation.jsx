@@ -11,7 +11,7 @@ export const AccessInvitation = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={item.image} alt={item.id} title={item.id} />
+        <img src={item.image} alt={item.id} />
       </AccessInvitationStyles.SocialMediaLink>
     );
   });
@@ -21,7 +21,6 @@ export const AccessInvitation = () => {
       <AccessInvitationStyles.FounderImage
         src="/assets/images/image-founder.webp"
         alt="Workit's founder"
-        title="Workit's founder"
         width="281"
         height="281"
       />
@@ -45,7 +44,6 @@ export const AccessInvitation = () => {
           className="workit-logo"
           src="/assets/images/logo-dark.svg"
           alt="Workit logo"
-          title="Workit logo"
           width="95.76"
           height="24.61"
         />

@@ -9,7 +9,6 @@ export const Introduction = () => {
             className="workit-logo"
             src="/assets/images/logo-light.svg"
             alt="Workit logo"
-            title="Workit logo"
             width="95.76"
             height="24.61"
           />
@@ -22,7 +21,7 @@ export const Introduction = () => {
         role="presentation"
       />
       <IntroductionStyles.MainHeading>
-        Data <u>tailored</u> to your needs.
+        Data <em>tailored</em> to your needs.
       </IntroductionStyles.MainHeading>
       <IntroductionStyles.Link
         className="primary-button"
@@ -42,5 +41,3 @@ export const Introduction = () => {
     </IntroductionStyles.IntroductionSection>
   );
 };
-
-/* RRC: Should we have the text in a data.json? */
