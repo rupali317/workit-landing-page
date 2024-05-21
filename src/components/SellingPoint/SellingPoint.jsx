@@ -5,7 +5,7 @@ export const SellingPoint = () => {
   const sellingPoints = data.map((item) => {
     return (
       <SellingPointStyles.List key={item.id}>
-        <div aria-label={`Number ${item.id}`}>{item.id}</div>
+        <div>{item.id}</div>
         <h3>{item.title}</h3>
         <p>{item.description}</p>
       </SellingPointStyles.List>
