@@ -278,6 +278,10 @@ export const DefaultStyles = createGlobalStyle`
         transform: translateY(0.0625rem);
     }
 
+    footer {
+        padding-bottom: var(--space-m-2);
+    }
+
     img {
         margin-left: auto;
         margin-right: auto;
@@ -306,6 +310,10 @@ export const DefaultStyles = createGlobalStyle`
         .curved-effect {
             height: 7.5rem; // 120px
         }
+
+        footer {
+            padding-bottom: var(--space-l-3);
+        }
     }
 
     @media (min-width: ${DESKTOP_WIDTH}) {
@@ -327,6 +335,10 @@ export const DefaultStyles = createGlobalStyle`
 
         .curved-effect {
             height: 14.375rem; // 230px
+        }
+
+        footer {
+            padding-bottom: var(--space-l-2);
         }
     }
 `;

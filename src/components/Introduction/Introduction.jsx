@@ -9,6 +9,7 @@ export const Introduction = () => {
             className="workit-logo"
             src="/assets/images/logo-light.svg"
             alt="Workit logo"
+            aria-label="Workit logo - Home"
             width="95.76"
             height="24.61"
           />

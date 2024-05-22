@@ -1,21 +1,7 @@
-import data from "./data.json";
 import * as AccessInvitationStyles from "../../styles/AccessInvitation.style";
 import React from "react";
 
 export const AccessInvitation = () => {
-  const SocialMediaList = data.map((item) => {
-    return (
-      <AccessInvitationStyles.SocialMediaLink
-        key={item.id}
-        href={item.link}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src={item.image} alt={item.id} />
-      </AccessInvitationStyles.SocialMediaLink>
-    );
-  });
-
   return (
     <AccessInvitationStyles.AccessInvitationSection>
       <AccessInvitationStyles.FounderImage
@@ -39,18 +25,6 @@ export const AccessInvitation = () => {
           role="presentation"
         />
       </AccessInvitationStyles.InvitationCard>
-      <a href="#introduction-section">
-        <img
-          className="workit-logo"
-          src="/assets/images/logo-dark.svg"
-          alt="Workit logo"
-          width="95.76"
-          height="24.61"
-        />
-      </a>
-      <AccessInvitationStyles.SocialMediaSection>
-        {SocialMediaList}
-      </AccessInvitationStyles.SocialMediaSection>
     </AccessInvitationStyles.AccessInvitationSection>
   );
 };

@@ -1,26 +1,6 @@
 import { styled } from "styled-components";
 import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 
-export const SocialMediaSection = styled.section`
-  display: flex;
-  gap: var(--space-s-5);
-  align-items: center;
-  justify-content: center;
-  margin-top: var(--space-m-1);
-`;
-
-export const SocialMediaLink = styled.a`
-  &:hover {
-    filter: brightness(0) saturate(100%) invert(3%) sepia(90%) saturate(4030%)
-      hue-rotate(261deg) brightness(102%) contrast(102%);
-  }
-
-  img {
-    width: 1.25rem; // 20px
-    height: 1.25rem; // 20px
-  }
-`;
-
 export const InvitationCard = styled.section`
   color: var(--color-neutral-2);
   background-color: var(--color-primary-1);
@@ -120,17 +100,17 @@ export const FounderImage = styled.img`
 
 export const AccessInvitationSection = styled.section`
   position: relative;
-  padding: var(--space-xl-8) var(--space-xs-6) var(--space-m-2)
+  padding: var(--space-xl-8) var(--space-xs-6) var(--space-none)
     var(--space-xs-5);
   /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    padding: var(--space-xl-5) var(--space-base-4) var(--space-l-3)
+    padding: var(--space-xl-5) var(--space-base-4) var(--space-none)
       var(--space-base-3);
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    padding: var(--space-xl-9) var(--space-l-7) var(--space-l-2)
+    padding: var(--space-xl-9) var(--space-l-7) var(--space-none)
       var(--space-xl-1);
   }
 `;
