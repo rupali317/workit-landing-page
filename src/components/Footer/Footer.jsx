@@ -16,7 +16,7 @@ export const Footer = () => {
   });
 
   return (
-    <footer>
+    <>
       <a href="#introduction-section">
         <img
           className="workit-logo"
@@ -30,6 +30,6 @@ export const Footer = () => {
       <FooterStyles.SocialMediaSection>
         {SocialMediaList}
       </FooterStyles.SocialMediaSection>
-    </footer>
+    </>
   );
 };

@@ -1,5 +1,4 @@
 import { AccessInvitation } from "./components/AccessInvitation";
-import { Footer } from "./components/Footer/Footer";
 import { Introduction } from "./components/Introduction";
 import { SellingPoint } from "./components/SellingPoint";
 import * as GlobalStyles from "./styles/Global.style";
@@ -13,7 +12,6 @@ function App() {
       <Introduction />
       <SellingPoint />
       <AccessInvitation />
-      <Footer />
     </>
   );
 }
