@@ -254,7 +254,8 @@ export const DefaultStyles = createGlobalStyle`
         }
     }
 
-    .secondary-button {
+    .secondary-button,
+    .skip-link {
         color: var(--color-neutral-2);
         background-color: transparent;
         border: none;
@@ -265,6 +266,19 @@ export const DefaultStyles = createGlobalStyle`
             color: var(--color-secondary-1);
             cursor: pointer;
         }
+    }
+
+    .skip-link {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        left: 0;
+        top: -3rem;
+        transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+        top: 0;
     }
 
     .curved-effect {
