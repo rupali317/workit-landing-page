@@ -102,7 +102,6 @@ export const AccessInvitationSection = styled.section`
   position: relative;
   padding: var(--space-xl-8) var(--space-xs-6) var(--space-none)
     var(--space-xs-5);
-  /* background-color: var(--color-neutral-2); */ /* RRC: Check why white color is replacing the image */
 
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-xl-5) var(--space-base-4) var(--space-none)
