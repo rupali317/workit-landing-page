@@ -302,8 +302,8 @@ export const DefaultStyles = createGlobalStyle`
     }
 
     .workit-logo {
-        width: 5.985rem; // 95.76px
-        height: 1.538125rem; // 24.61px
+        width: 6rem; // 96px
+        height: 1.5625rem; // 25px
     }
 
     .visually-hidden:not(:focus):not(:active) { 

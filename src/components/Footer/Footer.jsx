@@ -23,8 +23,8 @@ export const Footer = () => {
           src="/assets/images/logo-dark.svg"
           alt="Workit logo"
           aria-label="Workit logo - Footer"
-          width="95.76"
-          height="24.61"
+          width="96"
+          height="25"
         />
       </a>
       <FooterStyles.SocialMediaSection>
