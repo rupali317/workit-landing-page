@@ -6,17 +6,18 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
+    - [1. Desktop version](#1-desktop-version)
+    - [2. Tablet version](#2-tablet-version)
+    - [3. Mobile version](#3-mobile-version)
+  - [PageSpeed Insights results](#pagespeed-insights-results)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Tested with](#tested-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,22 +28,24 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+##### 1. Desktop version
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Workit landing page desktop](./public/screenshots/Workit-landing-page-desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+##### 2. Tablet version
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Workit landing page tablet](./public/screenshots/Workit-landing-page-tablet.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+##### 3. Mobile version
+
+![Workit landing page mobile](./public/screenshots/Workit-landing-page-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Workit landing page github](https://github.com/rupali317/workit-landing-page)
+- Live Site URL: [Workit landing page live](https://workit-landing-page-rc.netlify.app/)
 
 ## My process
 
@@ -54,60 +57,56 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
+- [Netlify](https://www.netlify.com/) - A cloud platform that provides hosting services
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Tested with
+
+- Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge.
+- Devices:
+  - (Real) MacBook Pro (15-inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+, iPad Air 2, MacBook Pro (13-inch).
+  - (Virtual) The mobile and tablet devices mentioned under Chrome's dev console.
+- Screen reader: MacOS VoiceOver.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+In the following code snippet, I have created a `<svg>` by defining the path with notations like moving a point, created the curve and drawing the lines. The `.curved-effect` class in my css uses the id defined in the svg. This ultimately helped create the curved section.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<svg width="0" height="0" style="position: absolute">
+  <defs>
+    <clipPath id="clipped-path" clipPathUnits="objectBoundingBox">
+      <path d="M 0 0.7 Q 0.5 1.3 1 0.7 L 1 1 L 0 1 Z"></path>
+    </clipPath>
+  </defs>
+</svg>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.curved-effect {
+  width: 100%;
+  height: 3.875rem; // 62px
+  clip-path: url("#clipped-path");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(0.0625rem);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Coding a curved carousel](https://www.instagram.com/reel/C4FshYLt8_c/?igsh=MWF2aXl0enVqMWd5YQ==) - This provided me inspiration on how to tackle the curved section for workit landing page challenge.
+- [CSS color filter generator](https://angel-rs.github.io/css-color-filter-generator/) - This helped me to alter the color of the social media links on hover.
+- [Stackoverflow: How to allow keyboard focus of links in firefox](https://stackoverflow.com/questions/11704828/how-to-allow-keyboard-focus-of-links-in-firefox) - I faced an issue where in my MacOS's Firefox, the focus was not working as expected. There are some configurations that need to be done for the focus to work.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Rupali Roy Choudhury](https://www.linkedin.com/in/rupali-rc/)
+- Frontend Mentor - [@rupali317](https://www.frontendmentor.io/profile/rupali317)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- I thank Grace Snow for providing insights on how to improve the accessibility.
+- I express my gratitude towards my mentor - Deborah for the insightful code review session.
