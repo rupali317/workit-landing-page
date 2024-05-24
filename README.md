@@ -10,7 +10,6 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
     - [1. Desktop version](#1-desktop-version)
     - [2. Tablet version](#2-tablet-version)
     - [3. Mobile version](#3-mobile-version)
-  - [PageSpeed Insights results](#pagespeed-insights-results)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -32,15 +31,15 @@ Users should be able to:
 
 ##### 1. Desktop version
 
-![Workit landing page desktop](./public/screenshots/Workit-landing-page-desktop.png)
+![Workit landing page desktop](./public/assets/screenshots/Workit-landing-page-desktop.png)
 
 ##### 2. Tablet version
 
-![Workit landing page tablet](./public/screenshots/Workit-landing-page-tablet.png)
+![Workit landing page tablet](./public/assets/screenshots/Workit-landing-page-tablet.png)
 
 ##### 3. Mobile version
 
-![Workit landing page mobile](./public/screenshots/Workit-landing-page-mobile.png)
+![Workit landing page mobile](./public/assets/screenshots/Workit-landing-page-mobile.png)
 
 ### Links
 
@@ -70,7 +69,7 @@ Users should be able to:
 
 ### What I learned
 
-In the following code snippet, I have created a `<svg>` by defining the path with notations like moving a point, created the curve and drawing the lines. The `.curved-effect` class in my css uses the id defined in the svg. This ultimately helped create the curved section.
+In the following code snippet, I have created an `<svg>` by defining the path with notations like moving a point, created the curve and drawing the lines. The `.curved-effect` class in my css uses the id defined in the `<svg>`. This ultimately helped create the curved section.
 
 ```html
 <svg width="0" height="0" style="position: absolute">
