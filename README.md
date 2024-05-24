@@ -10,6 +10,7 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
     - [1. Desktop version](#1-desktop-version)
     - [2. Tablet version](#2-tablet-version)
     - [3. Mobile version](#3-mobile-version)
+  - [PageSpeed Insights results](#pagespeed-insights-results)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -41,6 +42,12 @@ Users should be able to:
 ##### 3. Mobile version
 
 ![Workit landing page mobile](./public/assets/screenshots/Workit-landing-page-mobile.png)
+
+### PageSpeed Insights results
+
+[Mobile version](https://pagespeed.web.dev/analysis/https-workit-landing-page-rc-netlify-app/i41mnpkxgc?form_factor=mobile)
+
+[Desktop version](https://pagespeed.web.dev/analysis/https-workit-landing-page-rc-netlify-app/i41mnpkxgc?form_factor=desktop)
 
 ### Links
 
